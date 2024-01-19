@@ -1,0 +1,9 @@
+{
+    "editor.formatOnType": true,
+    "[lisp]": {
+        "editor.wordSeparators": "`|;:'\",()",
+    },
+    "alive.lsp.startCommand": [
+        "make", "alive-lsp"
+    ]
+}
