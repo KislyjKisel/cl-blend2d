@@ -1,5 +1,8 @@
 (in-package #:blend2d)
 
+(export 'format-flags)
+(autowrap:define-bitmask-from-enum (format-flags %bl:format-flags*))
+
 (defun test ()
     (let ((img (autowrap:alloc '%bl:image-core))
           (ctx (autowrap:alloc '%bl:context-core))
