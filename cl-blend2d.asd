@@ -10,5 +10,5 @@
                  (:module src
                   :pathname "src"
                   :components ((:file "package")
-                               (:file "blend2d-auto")
-                               (:file "blend2d")))))
+                               (:file "autowrap")
+                               (:file "wrapped")))))
