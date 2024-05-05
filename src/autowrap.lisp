@@ -16,9 +16,12 @@
                  ("^bl(.*)" () "\\1"))
   :symbol-exceptions (("BLRandom" . "bl-random"))
   :include-definitions ()
-  :exclude-definitions ("blRuntimeMessageVFmt"
-                        "blStringApplyOpFormatV"
-                        "^_[A-Z]"))
+  :exclude-definitions ("^_[A-Z]"
+                        "__gnuc_va_list"
+                        "va_list"
+                        "max_align_t"
+                        "blRuntimeMessageVFmt"
+                        "blStringApplyOpFormatV"))
 
 (cl:export 'format-flags*)
 (autowrap:define-enum-from-constants (format-flags*)
